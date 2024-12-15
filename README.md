@@ -1,1 +1,2 @@
-# sait-repo
+# SAIt-repo
+Team 10
