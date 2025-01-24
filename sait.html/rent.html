@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .head{
+
+            padding: 10px;
+            background-color: #2874f0;
+            color: white;
+        text-align: center;
+        font-size: 21px;
+            
+            
+            
+        }
+        
+        .auth-buttons button{
+            background-color: #003d7a;
+            color: white;
+            
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+          h1{
+              font-family: cursive;
+              }
+               .m{
+             position: absolute;
+             top: 0;
+             left: 0;
+             
+             height: 148px;
+            
+        }
+        .login{
+            background-color:#f4f4f4;
+            border: none;
+            border-radius: 2px;
+            
+        }
+        
+        .links{
+            display: flex;
+            padding: 10px;
+            
+            justify-content: center;
+            background-color: white;
+            justify-content: space-evenly;
+            font-weight: bold;
+            
+        }
+          .hyper{
+            text-decoration: none  ;
+            color: #000000;
+            margin-right: 15px;
+            
+        }
+         .hyper:hover{
+            text-decoration: underline;
+        }
+        .search{
+            text-align: center;
+            margin: 10px;
+        }
+        .search input{
+            border: 2px solid blue;
+            border-radius: 5px;
+            
+            width: 300px;
+            padding: 10px;
+        }
+        .search input  :hover{
+            border-color: gold;
+        }
+        .search button{
+            padding: 10px;
+            background-color: #2874f0;
+            color: white;
+            border:none;
+            border-radius: 5px;
+        
+        }
+        .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .product {
+      background-color: white;
+      margin: 15px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      width: 200px;
+      text-align: center;
+    }
+
+        .Buy{
+           background-color: lightgreen;
+           background-color: #2874f0;
+           color: #f4f4f4;
+           padding: 10px;
+           border-radius: 5px;
+           border: none;
+        }
+        .Buy :hover{
+            color: azure;
+        }
+        .footer{
+            height: 300px;
+            background-color: #2874f0;
+            display: flex;
+            padding-top: 100px;
+            justify-content: space-evenly;
+            
+            
+        }
+        .fh{
+            font-weight: 550;
+        } 
+        .blue{
+            background-color: #2874f0;
+            border: none;
+            width: 500px;       }
+    </style>
+</head>
+<body>
+    
+
+<div class="head">
+    
+    <img class="m" src="logo.jpeg" alt="" height="100">
+    <h1 style="color: gold;">College Ki Dukkan</h1>
+    <div class="auth-buttons">
+    <button class="login"><a  id="login" href="index.html" style="color: #ddd; font-weight:bold ;" class="hyper">Login  </a></button>
+    <button class="login"><a  id=signin href="signup.html" style="color: #ddd; font-weight:bold ;" class="hyper">Sign in</a></button></div>
+</div>
+
+<div class="search"><input type="text" placeholder="Search for product...">
+    <button>Search</button>
+
+</div>
+ 
+
+<div class="links">
+    <a href="index.html" class="hyper">Home</a>
+    
+    <a href="Sell.html" class="hyper">Sell</a>
+    <a href="rent.html" class="hyper">Rent</a>
+    
+</div>
+<div class="products">
+<div class="product">
+    <img src="drafter.jpeg" alt="Drafter" width="220px" height="200px" >
+    <h2>TECHNOSIGMA MINI DRAFTER </h2>
+    
+    <p> price: &#8377 49 per day</p>
+    <p>security-deposit:&#8377 599 (refundable)</p>
+    <button class="Buy">Contact For Rent</button>
+
+</div>
+<div class="product">
+    <img src="calculator.webp" alt="" width="200px">
+    <h2>Casio Scientific Calculator</h2>
+    <p>price:&#8377 35 per day</p>
+    <p>security-deposit:&#8377 699 (refundable)</p>
+    <button class="Buy">Contact For Rent</button>
+</div>
+<div class="product">
+    <img src="file.jpeg" alt="" width="200px">
+    <h2>WCE Submission File</h2>
+    <p>price:&#8377 5 per day</p>
+    <p>security-deposit:&#8377 12(refundable)</p>
+    <button class="Buy">Contact For Rent</button>
+</div>
+<div class="product">
+<img src="ketal.png" alt="" width="200px">
+<h2>MILTON Electric Ketal</h2>
+<p>price:&#8377 35 per day</p>
+<p> security-deposit:&#8377 599 (refundable)</p>
+<button class="Buy">Contact For Rent</button>
+</div>
+<div class="product">
+    <img src="wash.jpg" alt="" width="200px" height="205px">
+    <h2>Mini Washing Machine </h2>
+    <p>price:&#8377 99 per day</p>
+    <p>security-deposit:&#8377 999 (refundable)</p>
+    <button class="Buy">Contact For Rent</button>
+</div>
+</div>
+<div class="products">
+    <div class="product">
+        <img src="mrfbat.png" alt="Drafter" width="200px" height="230px">
+        <h2>MRF Cricket Bat </h2>
+        
+        <p> price: &#8377 99 per day</p>
+        <p>security-deposit:&#8377 699 (refundable)</p>
+        <button class="Buy">Contact For Rent</button>
+    
+    </div>
+    <div class="product">
+        <img src="racket.jpg" alt="" width="180px" height="200px">
+        <h2>YON Badminton Racquet</h2>
+        <p>price:&#8377 49 per day</p>
+        <p>security-deposit:&#8377 599 (refundable)</p>
+        <button class="Buy">Contact For Rent</button>
+    </div>
+    <div class="product">
+        <img src="football.jpg" alt="" width="200px">
+        <h2>Senston Soccer Ball </h2>
+        <p>price:&#8377 59 per day</p>
+        <p>security-deposit:&#8377 999 (refundable)</p>
+        <button class="Buy">Contact For Rent</button>
+    </div>
+    <div class="product">
+    <img src="chess.jpg" alt="" width="220px" height="200px">
+    <h2>Wooden Chessboard</h2>
+    <p>price:&#8377 49 per day</p>
+    <p> security-deposit:&#8377 699 (refundable)</p>
+    <button class="Buy">Contact For Rent</button>
+    </div>
+    <div class="product">
+        <img src="tent.jpg" alt="" width="200px">
+        <h2>Polyester Tent For Camping </h2>
+        <p>price:&#8377 199 per day</p>
+        <p>security-deposit:&#8377 1199
+            (refundable)</p>
+        <button class="Buy">Contact For Rent</button>
+    </div>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="powerbank.webp" alt="Drafter" width="220px" height="200px" >
+            <h2>Xiaomi Power Bank </h2>
+            
+            <p> price: &#8377 69 per day</p>
+            <p>security-deposit:&#8377 799 (refundable)</p>
+            <button class="Buy">Contact For Rent</button>
+        
+        </div>
+        <div class="product">
+            <img src="speaker.webp" alt="" width="200px">
+            <h2>AXON Bluetooth Speaker</h2>
+            <p>price:&#8377 99 per day</p>
+            <p>security-deposit:&#8377 999 (refundable)</p>
+            <button class="Buy">Contact For Rent</button>
+        </div>
+        <div class="product">
+            <img src="camera.jpg" alt="" width="200px">
+            <h2>Focusify Digital Camera</h2>
+            <p>price:&#8377 299 per day</p>
+            <p>security-deposit:&#8377 1499 (refundable)</p>
+            <button class="Buy">Contact For Rent</button>
+        </div>
+        <div class="product">
+        <img src="pendrive.jpg" alt="" width="200px">
+        <h2>Verilux Flash Drive 64GB 4 in 1</h2>
+        <p>price:&#8377 69 per day</p>
+        <p> security-deposit:&#8377 599 (refundable)</p>
+        <button class="Buy">Contact For Rent</button>
+        </div>
+        <div class="product">
+            <img src="cycle.jpg" alt="" width="200px" height="205px">
+            <h2>Hero Geared Cycle </h2>
+            <p>price:&#8377 199 per day</p>
+            <p>security-deposit:&#8377 2999 (refundable)</p>
+            <button class="Buy">Contact For Rent</button>
+        </div></div>
+    <hr>
+    
+    <div class="footer">
+        <div>
+      <ul type="none">
+        <li class="fh">Get to Know Us</li>
+        <li><a href="#">About College Ki Dukkan</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="Press Releases"></a></li>
+      </ul></div>
+      <div>
+      <ul type="none">
+        <li class="fh">Connect with Us</li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+        </div>
+        <div><ul type="none">
+
+            <li class="fh">Make Money With Us</li>
+            <li><a href="#">Sell on College Ki Dukkan</a></li>
+            <li><a href="#">Protect and Build Your Brand</a></li>
+            <li><a href="#">Supply to College Ki Dukkan</a></li>
+        </ul></div>
+        <div>
+            <ul type="none">
+                <li class="fh">Let us help You</li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Collge ki Dukkan APP Download</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        
+
+    </div>
+    <div class="footer">
+       <div> <img src="logo.jpeg" alt="" height="250px"  ></div>
+       <div> <button class="blue" style="width: 200px; height:50px">
+        <select name="m1" id="same" >
+            <option value="same">English</option>
+            <option value="same">Hindi</option>
+            <option value="same">Marathi</option>
+            <option value="same">Gujrati</option>
+            <option value="same">Kashmiri</option>
+            <option value="same">Punjabi</option>
+        </select></button>
+        </div>
+        <div>
+            <button  style="width: 200px; height:50px">India</button>
+    
+        </div>
+    </div>
+    
+    
+</body>
+</html>
