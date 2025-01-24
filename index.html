@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #1e3c72, #2a5292, #4facfe, #00c6ff);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+
+    .m {
+      border-radius: 50%;
+      justify-content: center;
+      margin-left: 160px;
+    }
+
+    h1,
+    h2 {
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4facfe;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+
+
+
+
+    /* Login Container */
+    .login-container {
+      background-color: whitesmoke;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+      margin-top: 100px;
+    }
+
+    .login-form {
+      text-align: center;
+    }
+
+    .login-form p {
+      color: #666;
+      margin: 10px 0 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      text-align: left;
+      font-size: 14px;
+      color: #555;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      border-color: #4facfe;
+      outline: none;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .login-btn {
+      background-color: #4facfe;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #3c8ec7;
+    }
+
+    .signup-text {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Login Container -->
+  <div class="login-container">
+    <img class="m" src="logo.jpeg" width="70px">
+    <div class="login-form">
+      <h2>Login to your account</h2>
+      <form action="#" method="post">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <div class="options">
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="login-btn"><a  id="login" href="home.html" style="color: #ddd; font-weight:bold ;" class="hyper">Login  </a></button>
+      </form>
+      <p class="signup-text">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+</body>
+
+</html>

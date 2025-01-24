@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-Page</title>
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background: linear-gradient(120deg, #1e3c72, #2a5298, #4facfe, #00c6ff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+    
+  
+  
+  h2 {
+    color: #333;
+  }
+  .m{
+    border-radius: 50%;
+    justify-content: center;
+    margin-left: 160px;
+  }
+  
+  
+  /* signup Container */
+  .signup-container {
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow:  5px -5px 7px rgb(76, 74, 74);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 90px;
+  }
+  
+  .signup-form {
+    text-align: center;
+  }
+  
+  .signup-form p {
+    color: #666;
+    margin: 10px 0 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #4facfe;
+    outline: none;
+  }
+  
+  
+  .signup-btn {
+    background-color: #1ea5ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background-color: #3c8ec7;
+  }
+  
+  
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+      <img class="m" src="logo.jpeg" width="70px">
+        <div class="signup-form">
+          <h2>WELCOME NEWBIE!</h2>
+          <p>Create your account</p>
+          <form action="#" method="post">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <label for="password"> Enter Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>      
+            <label for="password">Confirm Password</label>
+            <input type="password" id="pass" name="Pass" placeholder="Confirm your password" required>
+            <button type="submit" class="signup-btn"><a class="signup-btn" href="index.html">Signup</a></button>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
